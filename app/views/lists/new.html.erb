@@ -1,0 +1,11 @@
+<h1>Create a New List</h1>
+
+<%= form_with model: @list, local: true do |form| %>
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+  <%= form.submit "Create List", class: "btn btn-success" %>
+<% end %>
+
+<%= link_to "Back to all lists", lists_path, class: "btn btn-secondary" %>
