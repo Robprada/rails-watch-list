@@ -1,7 +1,7 @@
 
 <h1>Add a Movie to <%= @list.name %></h1>
 
-<%= form_with model: [@list, @bookmark], local: true do |form| %>
+<%= form_with model: [@list, @bookmark] do |form| %>
   <div class="form-group">
     <%= form.label :movie_id, "Choose a Movie" %>
     <%= form.collection_select :movie_id, Movie.all, :id, :title, { prompt: "Select a movie" }, class: "form-control" %>

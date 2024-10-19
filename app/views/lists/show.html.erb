@@ -4,7 +4,7 @@
     <li>
       <%= image_tag bookmark.movie.poster_url, size: "100x150" %>
       <strong><%= bookmark.movie.title %></strong>: <%= bookmark.comment %>
-      <%= link_to "Remove", list_bookmark_path(@list, bookmark), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+      <%= button_to "Remove", bookmark_path(bookmark), method: :delete, confirm: "Are you sure?", class: "btn btn-danger" %>
     </li>
   <% end %>
 </ul>

@@ -1,4 +1,0 @@
-<h1><%= @bookmark.comment %></h1>
-<p>Movie ID: <%= @bookmark.movie_id %></p>
-<%= link_to 'Regresar a la lista', list_path(@list),  class: "btn btn-dark" %>
-<%= link_to 'Eliminar', list_bookmark_path(@list, @bookmark), class: "btn btn-danger",  method: :delete, data: { confirm: '¿Estás seguro?' } %>

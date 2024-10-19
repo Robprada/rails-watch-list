@@ -4,3 +4,5 @@ import "controllers"
 // app/assets/config/manifest.js
 //= link popper.js
 //= link bootstrap.min.js
+import Rails from "@rails/ujs";
+Rails.start();
