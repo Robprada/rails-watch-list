@@ -5,6 +5,12 @@
     <%= form.label :name %>
     <%= form.text_field :name, class: "form-control" %>
   </div>
+
+  <div class="form-group">
+    <%= form.label :photo %>
+    <%= form.file_field :photo, class: "form-control" %> <!-- Añade este campo para la imagen -->
+  </div>
+
   <%= form.submit "Create List", class: "btn btn-success" %>
 <% end %>
 

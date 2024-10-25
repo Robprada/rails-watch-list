@@ -1,4 +1,10 @@
 <h1><%= @list.name %></h1>
+
+<!-- Mostrar la imagen de la lista, si está adjunta -->
+<% if @list.photo.attached? %>
+  <%= image_tag @list.photo, size: "400x300" %> <!-- Ajusta el tamaño según lo necesites -->
+<% end %>
+
 <ul>
   <% @list.bookmarks.each do |bookmark| %>
     <li>
